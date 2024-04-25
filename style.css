@@ -27,14 +27,14 @@ body {
 
 .container {
   width: 80%;
-  height: 700px;
+  height: 500px;
   margin: 0 auto;
   border: 10px solid var(--clr-dark);
 }
 
 .item {
   width: 150px;
-  height: 150px;
+  height: 100px;
   background-color: #b2d8d8;
   padding: 1em;
   font-weight: 700;
@@ -46,7 +46,25 @@ body {
 /* END OF BASE STYLES */
 
 /* 1. Flex container */
-
+.container {
+  display: flex;
+  overflow: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+}
 /* 2. Flex item */
+.item-1 {
+  order: 1;
+}
 
+.item-2 {
+  align-self: center;
+  align-content: center;
+}
+
+.item-4 {
+  align-self: flex-end;
+  align-content: center;
+}
 /* 3. Media Queries */
