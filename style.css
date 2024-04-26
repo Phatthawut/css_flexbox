@@ -49,13 +49,14 @@ body {
 .container {
   display: flex;
   overflow: auto;
+  
   flex-direction: row;
   justify-content: space-between;
   align-content: flex-start;
 }
 /* 2. Flex item */
 .item-1 {
-  order: 1;
+  flex: 1 0 50%;
 }
 
 .item-2 {
